@@ -1,18 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+@extends('include.header')
+@push('style')
     <style>
         .duration-4 {
             transition-duration: 0.4s;
         }
     </style>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
+@endpush
 <body class="h-screen items-center justify-center" style="background: #edf2f7;">
 <div class="bg-grey-light py-8 justify-center items-center w-full flex flex-wrap">
     <div class="bg-white rounded w-1/5 m-4 shadow hover:shadow-md duration-4">
