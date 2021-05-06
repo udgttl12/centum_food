@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CalenDarController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,8 @@ Route::get('/', function () {
 
 
 Route::view('/list','list');
+Route::view('/full','full');
+
+Route::prefix('/calendar')->name('calendar.')->group(function (){
+    Route::get('',[CalenDarController::class,'index'])->name('index');
+});
