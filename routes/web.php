@@ -29,3 +29,7 @@ Route::prefix('/calendar')->name('calendar.')->group(function (){
     Route::get('/{foodCalendar}/edit', [CalenDarController::class, 'edit'])->name('edit');
     Route::put('/{foodCalendar}/update', [CalenDarController::class, 'update'])->name('update');
 });
+
+Route::get('/debug-sentry', function () {
+    throw new Exception('My first Sentry error!');
+});
